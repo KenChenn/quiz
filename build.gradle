@@ -17,6 +17,13 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	//讓服務一直啟動著，用來後續可以接API用
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //mySql connector  mySql連接 from https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.31'
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
